@@ -79,11 +79,13 @@ void    my_menus(void)
     tid = get_tid_low();
     if (tid == 0x177000)
     {
+		assign_region(EUR);
 		new_unselectable_entry("TFH NTR Cheats v1.0 EUR");
     }
 /*	
 	else if (tid == 0x176f00)
     {
+		assign_region(USA);
 		new_unselectable_entry("TFH NTR Cheats v1.0 USA");
     }
 	
