@@ -1,9 +1,25 @@
 #ifndef CHEATS_H
 #define CHEATS_H
 
-#include "plugin.h"
+#include "../Includes/plugin.h"
 
-void	exceptSharpness(void);
-void	code2(void);
+/*
+EUR Addresses
+*/
+
+#define		ITEMS_ADDR				0x32C825A4
+#define		MATERIALS_ADDR			0x22C5BBA4
+
+enum
+{
+	EUR = 0,
+	USA,
+	JAP
+};
+
+void    assign_region(u32 region);
+
+void	Item99(void);
+void	Mat99(void);
 
 #endif
