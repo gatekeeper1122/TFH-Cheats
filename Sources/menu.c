@@ -1,4 +1,5 @@
 #include "cheats.h"
+#include "notes.h"
 
 #define ENTRY_COUNT 300
 
@@ -19,7 +20,7 @@ typedef void    (*FuncPointer)(void);
 extern t_menu menu;
 
 
-
+/*
 void    new_super_unselectable_entry(char *str, FuncPointer function)
 {
     int index;
@@ -31,11 +32,8 @@ void    new_super_unselectable_entry(char *str, FuncPointer function)
     menu.f[index] |= BIT(0) | BIT(1);
     menu.fp[index] = function;
 }
+*/
 
-char    *builder_name = "xXPaulMCXx";
-
-    //static const char * const t2i_note = "Type item ID and send it into chat,\n\nPress X+D Pad Right,\n\nTo write item to slot 1!";
-	
 void with_note_common(const char *name, const char *note, void (*cheatfunction)(void), int type)
 {
     int     index;
@@ -65,12 +63,49 @@ inline void new_spoiler_with_note(const char *name, const char *note)
     with_note_common(name, note, NULL, 2);
 }
 
-
-char    tan_level_buffer[40] = "First init";
-int     g_increase_menu_index = 0;
-int     g_decrease_menu_index = 0;
+char	*builder_name = "xXPaulMCXx & Slattz";
 
 static inline void  smenu(void)
 {
-    update_tan_entry();
+	new_entry_with_note("99 Items", Item99note, Item99);
+	new_entry_with_note("99 Materials", Mat99note, Mat99);
+}
+
+void    my_menus(void)
+{
+    u32 tid;
+    
+    set_hid_address(0x10002000); //This is in order to unlock the advanced HID capabilities such as Touchscreen and the stick (No N3DS hid for the moment)
+    tid = get_tid_low();
+    if (tid == 0x177000)
+    {
+		new_unselectable_entry("TFH NTR Cheats v1.0 EUR");
+    }
+/*	
+	else if (tid == 0x176f00)
+    {
+		new_unselectable_entry("TFH NTR Cheats v1.0 USA");
+    }
 	
+	else if (tid == 0xXXXXXX)
+    {
+		assign_region(JAP);
+		new_unselectable_entry("TFH NTR Cheats v1.0 JAP");
+    }*/
+
+   else
+   {
+        new_unselectable_entry("You're Using An Unsupported TitleID!");			
+		new_unselectable_entry("This plugin only supports the");
+		new_unselectable_entry("Following TitleIDs:");
+		new_unselectable_entry("0004000000177000 (EUR)");
+		//new_unselectable_entry("0004000000176f00 (USA)");
+		//new_unselectable_entry("0004000000XXXXXX (JAP)");
+		
+        return;
+    }
+    smenu();
+}
+
+
+
