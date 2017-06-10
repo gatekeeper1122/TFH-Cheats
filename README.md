@@ -1,5 +1,6 @@
-# Monster Hunter Cheat Example
-A cheats plugin for NTR CFW
+# TLoZ Tri Force Heroes Plugin
+This is a NTR CFW Cheat Plugin for TLoZ Tri Force Heroes 
 
-Using this source is a great back end for your own cheat menu, and I'll be teaching others how to create their own codes from Gateway codes.
-All credits goes to Nanquitas for this
+Credit to: 
+- Nanquitas for libshark2NTR
+- Slattz for the Code
