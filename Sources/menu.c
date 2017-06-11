@@ -69,6 +69,12 @@ static inline void  smenu(void)
 {
 	new_entry_with_note("99 Items", Item99note, Item99);
 	new_entry_with_note("99 Materials", Mat99note, Mat99);
+	new_entry("99.999 Rupees", Rup_99);
+	new_entry("Inf. Hearts", Inf_heart);
+	new_entry("Inf. Retries", Inf_retry);
+	new_entry("Inf. Time", Inf_time);
+	new_entry("Inf. Rupees", Max_rupee);
+	new_entry("Freeze Time", Time_freeze);
 }
 
 void    my_menus(void)
