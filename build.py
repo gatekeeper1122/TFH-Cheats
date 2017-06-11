@@ -20,11 +20,12 @@ def allFolderFile(pattern, ext):
 			s+= os.path.join(dirpath, filename) + ' '
 	return s;
 
-USA_TID 	= "0004000000176F00"
+EUR_TID 	= "0004000000177000"
 NAME 		= "TriForceHeroes"
+FTP_FOLDER	= "./plugin/" + EUR_TID + "/"
 HOST		= "192.168.2.114"
 PORT		= "5000"
-COPYTOPATH	= "%s.plg" % NAME
+COPYTOPATH	= NAME + ".plg"
 CC 		= "arm-none-eabi-gcc"
 CP 		= "arm-none-eabi-g++"
 OC		= "arm-none-eabi-objcopy" 
@@ -53,7 +54,7 @@ def disconnect():
 def ls():
 	ftp.dir();
 
-def send():
+def send(path):
 	file = open(FILE, 'rb');
 	ftp.cwd(FTP_FOLDER);
 	ftp.storbinary('STOR '+ FILE, file);
@@ -112,6 +113,22 @@ if (os.path.isfile("payload.bin")):
 	run("rm payload.bin");
 if (os.path.isfile(NAME + ".map")):
 	run("rm *.map");
-
-printf("Done, enjoy your plugin !\n\n");
+	
+printf("Copying the Plugin in each Folder...");
+shutil.copy2(COPYTOPATH, "./plugin/plugin/" + EUR_TID + "/" + NAME + "_EUR.plg");
+printf("Creating the ZIP Folder...");
+shutil.make_archive(NAME, 'zip', ".\plugin");
+printf("Should I send the Plugin to your Console?");
+user = raw_input();
+if (user == "yes" or user == "y"):
+	print("");
+	printf("Got It!");
+	printf("Sending the Plugin right now...\n");
+	connect(HOST, PORT);
+	send(FTP_FOLDER);
+	disconnect();
+else:
+	printf("As you want Sir.\n");
+print("\n\n");
+printf("Done, enjoy your Plugin !\n\n");
 
