@@ -87,19 +87,19 @@ void    my_menus(void)
     if (tid == 0x177000)
     {
 		assign_region(EUR);
-		new_unselectable_entry("TFH NTR Cheats v1.0 EUR");
+		new_unselectable_entry("TFH NTR Cheats v1.1 EUR");
     }
 /*	
 	else if (tid == 0x176f00)
     {
 		assign_region(USA);
-		new_unselectable_entry("TFH NTR Cheats v1.0 USA");
+		new_unselectable_entry("TFH NTR Cheats v1.1 USA");
     }
 	
 	else if (tid == 0xXXXXXX)
     {
 		assign_region(JAP);
-		new_unselectable_entry("TFH NTR Cheats v1.0 JAP");
+		new_unselectable_entry("TFH NTR Cheats v1.1 JAP");
     }*/
 
    else
