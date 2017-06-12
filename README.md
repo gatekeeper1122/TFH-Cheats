@@ -1,5 +1,5 @@
 # TLoZ Tri Force Heroes Plugin for Europe
-This is a NTR CFW Cheat Plugin for TLoZ Tri Force Heroes EUR
+This is a NTR CFW Cheat Plugin for TLoZ Tri Force Heroes EUR (Other Regions may be added in the future)
 
 Credit to: 
 
