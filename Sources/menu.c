@@ -67,6 +67,7 @@ char	*builder_name = "xXPaulMCXx & Slattz";
 
 static inline void  smenu(void)
 {
+	new_unselectable_entry("Cheats provided by fort42.com");
 	new_entry_with_note("99 Items", Item99note, Item99);
 	new_entry_with_note("99 Materials", Mat99note, Mat99);
 	new_entry("99.999 Rupees", Rup_99);
