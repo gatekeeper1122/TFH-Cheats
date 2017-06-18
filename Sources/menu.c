@@ -68,14 +68,13 @@ char	*builder_name = "xXPaulMCXx & Slattz";
 static inline void  smenu(void)
 {
 	new_unselectable_entry("Cheats provided by fort42.com");
-	new_entry_with_note("99 Items", Item99note, Item99);
-	new_entry_with_note("99 Materials", Mat99note, Mat99);
-	new_entry("99.999 Rupees", Rup_99);
-	new_entry("Inf. Hearts", Inf_heart);
-	new_entry("Inf. Retries", Inf_retry);
-	new_entry("Inf. Time", Inf_time);
-	new_entry("Inf. Rupees", Max_rupee);
-	new_entry("Freeze Time", Time_freeze);
+	new_spoiler("Old 3DS");
+		new_entry("Infinite Hearts", OldInfHeart);
+		new_entry("99999 Rupees", Old99Rupee);
+		new_entry("3348 Rupees", Old3348Rupee);
+		new_entry_with_note("99 Items", Item99note, Item99);
+		new_entry_with_note("99 Material", Mat99note, Mat99);
+	exit_spoiler();
 }
 
 void    my_menus(void)
@@ -87,19 +86,19 @@ void    my_menus(void)
     if (tid == 0x177000)
     {
 		assign_region(EUR);
-		new_unselectable_entry("TFH NTR Cheats v1.1 EUR");
+		new_unselectable_entry("TFH NTR Cheats v1.2 EUR");
     }
 /*	
 	else if (tid == 0x176f00)
     {
 		assign_region(USA);
-		new_unselectable_entry("TFH NTR Cheats v1.1 USA");
+		new_unselectable_entry("TFH NTR Cheats v1.2 USA");
     }
 	
 	else if (tid == 0xXXXXXX)
     {
 		assign_region(JAP);
-		new_unselectable_entry("TFH NTR Cheats v1.1 JAP");
+		new_unselectable_entry("TFH NTR Cheats v1.2 JAP");
     }*/
 
    else

@@ -32,34 +32,19 @@ void	Mat99(void)
 	}
 }
 
-void     Rup_99(void)
+void	OldInfHeart(void)
 {
-	WRITEU32(0x16C825A0, 0x1869F);
+	WRITEU32(0x32C825A4, 0x24);
 }
 
-void     Inf_heart(void)
+void	Old99Rupee(void)
 {
-	WRITEU8(0x322C5BB74, 0x24);
+	WRITEU32(0x32C825A0, 0x1869F);
 }
 
-void     Inf_retry(void)
+void	Old3348Rupee(void)
 {
-	WRITEU32(0x32D5872C, 0xA);
-}
-
-void     Inf_time(void)
-{
-	WRITEU32(0x32D58730, 0x14A0);
-}
-
-void     Max_rupee(void)
-{
-	WRITEU32(0x32C5BBA0, 0x189F);
-}
-
-void     Time_freeze(void)
-{
-	WRITEU8(0x32D81F98, 0x7F);
+	WRITEU32(0x32C825A0, 0xD14);
 }
 
 
