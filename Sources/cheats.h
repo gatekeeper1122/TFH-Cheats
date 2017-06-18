@@ -20,7 +20,7 @@ enum
 void    assign_region(u32 region);
 
 void	Item99(void);
-void	Mat99(void);
+//void	Mat99(void);
 void	OldInfHeart(void);
 void	Old99Rupee(void);
 void	Old3348Rupee(void);

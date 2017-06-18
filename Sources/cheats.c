@@ -21,7 +21,7 @@ void	Item99(void)
 	}
 }
 
-void	Mat99(void)
+/*void	Mat99(void)
 {
 	if (is_pressed(BUTTON_L + BUTTON_DL))
 	{
@@ -30,7 +30,7 @@ void	Mat99(void)
             WRITEU8(g_Materials + (i * 1), 0x63);
         }	
 	}
-}
+}*/
 
 void	OldInfHeart(void)
 {
