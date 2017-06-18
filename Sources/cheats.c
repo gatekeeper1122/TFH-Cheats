@@ -34,7 +34,7 @@ void	Item99(void)
 
 void	InfHeart(void)
 {
-	WRITEU8(0x32C825A4, 0x24);
+	WRITEU8(0x32C5BB74, 0x24);
 }
 
 void    Rupee99(void)
@@ -58,3 +58,6 @@ void      InfRetry(void)
 }
 
 
+[Inf Heart]
+D3000000 30000000
+22C5BB74 00000024
