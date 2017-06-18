@@ -56,8 +56,3 @@ void      InfRetry(void)
 {
 	WRITEU32(0x32D5872C, 0xA);
 }
-
-
-[Inf Heart]
-D3000000 30000000
-22C5BB74 00000024
