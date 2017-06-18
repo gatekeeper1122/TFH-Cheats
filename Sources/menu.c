@@ -68,11 +68,13 @@ char	*builder_name = "xXPaulMCXx & Slattz";
 static inline void  smenu(void)
 {
 	new_unselectable_entry("Cheats provided by fort42.com");
-	new_entry("Infinite Hearts", OldInfHeart);
-	new_entry("99999 Rupees", Old99Rupee);
-	new_entry("3348 Rupees", Old3348Rupee);
+	new_entry("Infinite Hearts", InfHeart);
+	new_entry("Infinite Rupees", 99Rupee);
+	//new_entry("3348 Rupees", Old3348Rupee);
 	new_entry_with_note("99 Items", Item99note, Item99);
 	//new_entry_with_note("99 Material", Mat99note, Mat99);
+	new_entry("Infinite Time", InfTimer);
+	new_entry("Infinite Retries", InfRetry);
 }
 
 void    my_menus(void)

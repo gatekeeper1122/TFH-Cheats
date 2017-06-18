@@ -21,8 +21,10 @@ void    assign_region(u32 region);
 
 void	Item99(void);
 //void	Mat99(void);
-void	OldInfHeart(void);
-void	Old99Rupee(void);
-void	Old3348Rupee(void);
+void	InfHeart(void);
+void    99Rupee(void);
+void    InfTimer(void);
+void    InfRetry(void);
+//void    3348Rupee(void);
 
 #endif

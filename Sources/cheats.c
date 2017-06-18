@@ -32,21 +32,29 @@ void	Item99(void)
 	}
 }*/
 
-void	OldInfHeart(void)
+void	InfHeart(void)
 {
-	WRITEU32(0x32C825A4, 0x24);
+	WRITEU8(0x32C825A4, 0x24);
 }
 
-void	Old99Rupee(void)
+void    99Rupee(void)
 {
 	WRITEU32(0x32C825A0, 0x1869F);
 }
 
-void	Old3348Rupee(void)
+/*void    3348Rupee(void)
 {
 	WRITEU32(0x32C825A0, 0xD14);
+}*/
+
+void      InfTimer(void)
+{
+	WRITEU32(0x32D58730, 0x14A0);
 }
 
-
+void      InfRetry(void)
+{
+	WRITEU32(0x32D5872C, 0xA);
+}
 
 
