@@ -22,7 +22,7 @@ void    assign_region(u32 region);
 void	Item99(void);
 //void	Mat99(void);
 void	InfHeart(void);
-void    99Rupee(void);
+void    Rupee99(void);
 void    InfTimer(void);
 void    InfRetry(void);
 //void    3348Rupee(void);

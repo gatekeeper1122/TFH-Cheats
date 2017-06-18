@@ -37,7 +37,7 @@ void	InfHeart(void)
 	WRITEU8(0x32C825A4, 0x24);
 }
 
-void    99Rupee(void)
+void    Rupee99(void)
 {
 	WRITEU32(0x32C825A0, 0x1869F);
 }
