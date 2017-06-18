@@ -31,7 +31,7 @@ CP 		= "arm-none-eabi-g++"
 OC		= "arm-none-eabi-objcopy" 
 LD 		= "arm-none-eabi-ld"
 CTRULIB 	= "../libctru"
-DEVKITARM 	= "c:/devkitPro/devkitARM"
+DEVKITARM 	= "/home/arc13/devkitPro/devkitARM"
 LIBPATH 	= "-L ./lib "
 ARCH 		= " -march=armv6k -mlittle-endian -mtune=mpcore -mfloat-abi=hard "
 CFLAGS		= " -Os -c " + ARCH
@@ -39,9 +39,9 @@ ASFLAGS		= " -Os -c -s " + ARCH
 LIBFLAGS 	= " -lntr -lShark2NTR_dev -lctr -lg -lsysbase -lc -lgcc "
 LDFLAGS		= " -pie --gc-sections -T 3ds.ld -Map=%s.map " % NAME
 INCLUDES 	= " -I Includes -I Sources -I Includes/libntrplg "
-CFILES		= allFolderFile(".\\Sources\\", ".c")
-ASFILES		= allFolderFile(".\\Sources\\", ".s")
-OFILES          = allFolderFile(".\\ofiles\\", ".o") 
+CFILES		= allFolderFile("Sources", ".c")
+ASFILES		= allFolderFile("Sources", ".s")
+OFILES          = allFolderFile("ofiles", ".o") 
 ftp 		= FTP()
 FILE		= COPYTOPATH
 		
@@ -117,7 +117,7 @@ if (os.path.isfile(NAME + ".map")):
 printf("Copying the Plugin in each Folder...");
 shutil.copy2(COPYTOPATH, "./plugin/plugin/" + EUR_TID + "/" + NAME + "_EUR.plg");
 printf("Creating the ZIP Folder...");
-shutil.make_archive(NAME, 'zip', ".\plugin");
+shutil.make_archive(NAME, 'zip', "plugin");
 printf("Should I send the Plugin to your Console?");
 user = raw_input();
 if (user == "yes" or user == "y"):
