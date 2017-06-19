@@ -87,7 +87,7 @@ void	GoronGarb(void)
 	WRITEU32(0x284A2E0, 0x0500);
 }
 
-void	GoronGarb(void)
+void	ZoraCost(void)
 {
 	WRITEU32(0x28495E4, 0x306);
 	WRITEU32(0x284A2E0, 0x0600);
@@ -186,7 +186,7 @@ void	LightArm(void)
 void	Cheetah(void)
 {
 	WRITEU32(0x28495E4, 0x316);
-	WRITEU32(0x284A2E0. 0x1600);
+	WRITEU32(0x284A2E0, 0x1600);
 }
 
 void	HeartAttack(void)
