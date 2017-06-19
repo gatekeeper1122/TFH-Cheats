@@ -189,7 +189,7 @@ void	Cheetah(void)
 	WRITEU32(0x284A2E0, 0x1600);
 }
 
-void	HeartAttack(void)
+void	HeartJack(void)
 {
 	WRITEU32(0x28495E4, 0x317);
 	WRITEU32(0x284A2E0, 0x1700);
