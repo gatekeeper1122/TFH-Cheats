@@ -73,7 +73,7 @@ static inline void  smenu(void)
 		new_entry("Infinite Retries", InfRetry);
 		new_entry_with_note("99 Items", Item99note, Item99);
 	exit_spoiler();
-	new_spoiler("Outfits");
+	new_spoiler("Outfits - WIP");
 		new_radio_entry("Bear Minimum Digs", BearDigsCost);
 		new_radio_entry("Sword Suit", SwordSuit);
 		new_radio_entry("Kokiri Clothes", KokiriCloth);
@@ -124,19 +124,19 @@ void    my_menus(void)
     if (tid == 0x177000)
     {
 		assign_region(EUR);
-		new_unselectable_entry("TFH NTR Cheats v1.2 EUR");
+		new_unselectable_entry("TFH NTR Cheats v1.2.1 EUR");
     }
 /*	
 	else if (tid == 0x176f00)
     {
 		assign_region(USA);
-		new_unselectable_entry("TFH NTR Cheats v1.2 USA");
+		new_unselectable_entry("TFH NTR Cheats v1.2.1 USA");
     }
 	
 	else if (tid == 0xXXXXXX)
     {
 		assign_region(JAP);
-		new_unselectable_entry("TFH NTR Cheats v1.2 JAP");
+		new_unselectable_entry("TFH NTR Cheats v1.2.1 JAP");
     }*/
 
    else

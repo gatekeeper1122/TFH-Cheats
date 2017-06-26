@@ -43,7 +43,8 @@ void      InfRetry(void)
 
 void	InfEnergy(void)
 {
-	WRITEU32(0x32849744, 0x44160000);
+	WRITEU32(0x32849754, 0x44160000);
+	WRITEU32(0x32849774, 0x44160000);
 }
 
 void	InfFairy(void)
