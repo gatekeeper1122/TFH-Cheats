@@ -71,6 +71,7 @@ static inline void  smenu(void)
 		new_entry("Infinite Rupees", Rupee99);
 		new_entry("Infinite Time", InfTimer);
 		new_entry("Infinite Retries", InfRetry);
+		new_entry("Infinite Energy", InfEnergy);
 		new_entry_with_note("99 Items", Item99note, Item99);
 	exit_spoiler();
 	new_spoiler("Outfits - WIP");

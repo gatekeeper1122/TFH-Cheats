@@ -24,6 +24,7 @@ void	InfHeart(void);
 void    Rupee99(void);
 void    InfTimer(void);
 void    InfRetry(void);
+void	InfEnergy(void);
 void	BearDigsCost(void);
 void	SwordSuit(void);
 void	KokiriCloth(void);
